@@ -1,0 +1,34 @@
+@import "compass/css3/border-radius";
+@import "weather/colors";
+
+.selectbox {
+  @include border-radius(0);
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border: 2px solid $gray-dark;
+  background-color: $white;
+  color: $gray-dark;
+  font-weight: 700;
+  font-size: 1.0rem;
+  padding-left: 10px;
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  user-select: none;
+}
+
+.selectbox_helper {
+  position: relative;
+}
+
+.selectbox_helper::after {
+  font-family: 'FontAwesome';
+  position: absolute;
+  pointer-events: none;
+  content: '\f078';
+  color: $gray-dark;
+  right: 10px;
+  top: 12px;
+}
