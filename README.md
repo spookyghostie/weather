@@ -16,7 +16,7 @@ To install locally
 To pull the docker image from docker hub
 
 * Run `docker pull mattbanister/weather`
-* Then `docker run mattbanister/weather`
+* Then `docker run -p 0.0.0.0:8080:8080 mattbanister/weather`
 * The site should be available from a host browser at `http://[docker machine vm ip]:8080`
 
 To build the docker image
