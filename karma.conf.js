@@ -54,8 +54,12 @@ module.exports = function (config) {
       noInfo: true
     },
     coverageReporter: {
-      type: 'html',
-      dir: 'coverage/'
+      reporters: [{
+        type: 'text-summary',
+      }, {
+        type: 'html',
+        dir: 'coverage/',
+      }]
     }
   })
 }
