@@ -13,7 +13,13 @@ To install locally
 * Run `npm run build && npm start`
 * Go to `http://localhost:8080` in your browser
 
-With docker installed (with docker machine on OS X)
+To pull the docker image from docker hub
+
+* Run `docker pull mattbanister/weather`
+* Then `docker run mattbanister/weather`
+* The site should be available from a host browser at `http://[docker machine vm ip]:8080`
+
+To build the docker image
 
 * cd to project directory
 * Run `docker build -t mattbanister/weather .`
