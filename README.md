@@ -31,3 +31,7 @@ To build the docker image
 ## Testing
 
 Run `npm run test`
+
+## TODO
+
+* Instrument code with isparta as preloader in order to have coverage on es6/jsx code rather than transpiled code
