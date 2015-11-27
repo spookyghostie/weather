@@ -7,7 +7,7 @@
     "build": "./bin/build.sh",
     "dev": "./bin/run_dev_server.sh",
     "lint": "./node_modules/.bin/eslint src/js src/components",
-    "prebuild": "npm run lint && npm run test",
+    "prebuild": "npm run lint",
     "start": "node index.js",
     "watch": "./bin/watch.sh",
     "test": "./node_modules/.bin/karma start"
