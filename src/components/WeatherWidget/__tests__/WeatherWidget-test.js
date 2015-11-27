@@ -19,7 +19,8 @@ describe('Weather Widget', () => {
     const weatherView = TestUtils.renderIntoDocument(<WeatherWidget
                                                         weatherData={weatherData}
                                                         forecastData={forecastData}
-                                                        cityList={cityList} />);
-    expect(weatherView).toExist();
+                                                        cityList={cityList}
+                                                        handleSelectChange={() => {}} />)
+    expect(weatherView).toExist()
   });
 });

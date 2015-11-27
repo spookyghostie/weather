@@ -16,6 +16,7 @@ export default class SelectBox extends Component {
     return (
       <div className={styles.selectbox_helper}>
         <select
+          defaultValue=""
           className={styles.selectbox}
           onChange={this.handleChange}>
           <option value="">Select a city</option>
@@ -27,5 +28,6 @@ export default class SelectBox extends Component {
 }
 
 SelectBox.propTypes = {
-  cityList: PropTypes.array.isRequired
+  cityList: PropTypes.array.isRequired,
+  handleChange: PropTypes.func.isRequired
 }

@@ -27,5 +27,6 @@ export default class WeatherWidget extends Component {
 WeatherWidget.propTypes = {
   cityList: PropTypes.array.isRequired,
   weatherData: PropTypes.object.isRequired,
-  forecastData: PropTypes.array.isRequired
+  forecastData: PropTypes.array.isRequired,
+  handleSelectChange: PropTypes.func.isRequired
 }

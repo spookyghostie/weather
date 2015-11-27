@@ -16,7 +16,7 @@ describe('Weather View', () => {
     }
     const forecastData = [{temp: 23, weekday: 'Mon'}, {temp: 34, weekday: 'Tue'}, {temp: 30, weekday: 'Wed'}]
     const weatherView =
-      TestUtils.renderIntoDocument(<WeatherView weatherData={weatherData} forecastData={forecastData} />);
-    expect(weatherView).toExist();
+      TestUtils.renderIntoDocument(<WeatherView weatherData={weatherData} forecastData={forecastData} />)
+    expect(weatherView).toExist()
   });
 });

@@ -14,7 +14,7 @@ describe('Weather Stats', () => {
       daily_min: 67.73,
       daily_max: 72.52
     }
-    const weatherStats = TestUtils.renderIntoDocument(<WeatherStats weatherData={weatherData} />);
-    expect(weatherStats).toExist();
+    const weatherStats = TestUtils.renderIntoDocument(<WeatherStats weatherData={weatherData} />)
+    expect(weatherStats).toExist()
   });
 });
