@@ -2,8 +2,6 @@ import React, { Component, PropTypes } from 'react'
 import ReactFauxDOM from 'react-faux-dom'
 import d3 from 'd3'
 
-import styles from './WeatherForecastChart.scss'
-
 export default class WeatherForecastChart extends Component {
   constructor(props) {
     super(props)
@@ -12,7 +10,13 @@ export default class WeatherForecastChart extends Component {
   render() {
     const dataset = this.props.data.map(datum => [datum.weekday, datum.temp])
     const chart = ReactFauxDOM.createElement('div')
-    const width = 400
+    const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+    var width
+    if (viewportWidth < 400) {
+      width = viewportWidth - 20
+    } else {
+      width = 400
+    }
     const height = 180
     const padding = 30
     const barPadding = 1
